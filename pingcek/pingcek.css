@@ -1,0 +1,349 @@
+body {
+	background: #fff;
+	border-top: 8px solid #725539;
+	color: #666;
+	font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	margin: 0;
+	padding: 0;
+	}
+
+div {
+	clear: left;
+	}
+
+img {
+	border: none;
+	}
+	
+h1,h2,h3,h4 {
+	color: #444444;
+	font-family: Georgia,"Bitstream Vera Serif","Times New Roman",serif;
+	font-weight: normal;
+	}
+
+h1 {
+	margin: 0;
+	}
+	
+	h1 a {
+		background: url(/images/sprite.png) no-repeat;
+		display: inline;
+		float: left;
+		height: 53px;
+		margin: 5px 0 0;
+		text-indent: -9999px;
+		width: 215px;
+		}
+
+h2 {
+	font-size: 20px;
+	font-style: italic;
+	margin: .2em 0 .3em;
+	}
+
+h3 {
+	font-size: 18px;
+	}
+
+h4 {
+	font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,Arial,sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 1.5em 0 -.8em;
+	}
+
+p {
+	font-size: 14px;
+	line-height: 1.6em;
+	}
+
+a {
+	color: #506b3a;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	}
+	
+	a:hover {
+		color: #7bc142;
+		}
+
+/*	Form elements */
+	
+	.text {
+		background: url(/images/text.png) repeat-x;
+		border: 1px solid #ccc;
+		border-top: 1px solid #999;
+		font-family: Georgia,"Bitstream Vera Serif","Times New Roman",serif;
+		font-size: 22px;
+		line-height: 1em;
+		padding: 5px 6px;
+		width: 85%;
+		/* Rounded corners in most browsers! */
+		-moz-border-radius: 4px; /* For Mozilla Firefox */
+		-khtml-border-radius: 4px; /* For Konqueror */
+		-webkit-border-radius: 4px; /* For Safari */
+		border-radius: 4px; /* For future native implementations */
+		}
+	
+	label {
+		cursor: pointer;
+		}
+
+/* 	Special classes */
+	
+	.clear {
+		clear: both;
+		display: block;
+		}
+	
+	.nomargin {
+		margin: 0;
+		}
+	
+	.expand-arrow {
+		background: url(/images/sprite.png) no-repeat -215px 5px;
+		padding: 0 0 0 9px;
+		}
+	
+	.externalicon {
+		background: url(/images/sprite.png) no-repeat -64px -69px;
+		display: inline-block;
+		height: 9px;
+		text-indent: -9999px;
+		vertical-align: baseline;
+		width: 8px;
+		_display: none;
+		}
+		
+		.externalicon span { display: none; }
+		
+/*	Wrap */
+	
+	#rap {
+		margin: 0 auto;
+		padding: 12px 0 0;
+		width: 720px;
+		}
+
+/*
+
+/*	Content */
+	
+	#content {
+		background: #eeeeee;
+		margin: 0 0 10px;
+		padding: 20px;
+		/* Rounded corners in most browsers! */
+		-moz-border-radius: 6px; /* For Mozilla Firefox */
+		-khtml-border-radius: 6px; /* For Konqueror */
+		-webkit-border-radius: 6px; /* For Safari */
+		border-radius: 6px; /* For future native implementations */
+		}
+		
+		#content .column-left {
+			clear: none;
+			float: left;
+			width: 141px;
+			}
+		
+		#content .column-main {
+			background: url(/images/column-main-bg.png) repeat-y;
+			clear: none;
+			float: left;
+			padding: 0 0 0 23px;
+			width: 516px;
+			}
+
+/* 	Generator */
+	
+	.generator {
+		background: #7bc142 url(/images/sprite.png) no-repeat 0 -259px;
+		margin: 0 0 20px;
+		padding: 20px;
+		position: relative;
+		/* Rounded corners in most browsers! */
+		-moz-border-radius: 6px; /* For Mozilla Firefox */
+		-khtml-border-radius: 6px; /* For Konqueror */
+		-webkit-border-radius: 6px; /* For Safari */
+		border-radius: 6px; /* For future native implementations */
+		}
+		
+		.generator .dot {
+			background: url(/images/sprite.png) no-repeat 0 -69px;
+			display: block;
+			height: 34px;
+			position: absolute;
+			right: 22px;
+			top: -19px;
+			width: 34px;
+			}
+			
+		.generator fieldset {
+			background: #fff;
+			border: none;
+			margin: 0 0 20px;
+			padding: 12px 16px;
+			/* Rounded corners in most browsers! */
+			-moz-border-radius: 4px; /* For Mozilla Firefox */
+			-khtml-border-radius: 4px; /* For Konqueror */
+			-webkit-border-radius: 4px; /* For Safari */
+			border-radius: 4px; /* For future native implementations */
+			}
+			.generator fieldset p {
+				margin: 0 0 .8em;
+				}
+			
+		.generator h3 {
+			color: #fff;
+			margin: 0 0 10px;
+			}
+		
+		.biglabel {
+			display: block;
+			}
+		
+		#common,
+		#specialized {
+			clear: none;
+			display: inline;
+			float: left;
+			}
+		
+		#common {
+			width: 474px;
+			}
+			
+			#common h4,
+			#specialized h4 {
+				margin: 0 0 .5em;
+				}
+			
+			#common p,
+			#specialized p {
+				float: left;
+				font-size: 12px;
+				margin: .3em 0;
+				width: 158px;
+				}
+			
+			#common input,
+			#specialized input {
+				margin: 0;
+				}
+		
+		#specialized {
+			border-left: 1px solid #7bc142;
+			margin: -16px 0 -16px -1px;
+			padding: 16px 0 16px 16px;
+			width: 158px;
+			}
+		
+		/* Big button */
+		
+		.bigbutton {
+			background: url(/images/sprite.png) no-repeat 0 -103px;
+			display: block;
+			margin: 0 30px 0 0;
+			height: 52px;
+			_position: relative; /* IE6 */
+			}
+			.bigbutton span {
+				background: url(/images/sprite.png) no-repeat 100% -103px;
+				color: #222;
+				display: block;
+				font-size: 20px;
+				line-height: 52px;
+				margin: 0 -30px 0 30px;
+				padding: 0 30px 0 0;
+				width: 620px;
+				text-align: center;
+				_position: relative; /* IE6 */
+				}
+			
+			.bigbutton:hover {
+				background-position: 0 -155px;
+				}
+				
+				.bigbutton:hover span {
+					background-position: 100% -155px;
+					}
+			
+			.bigbutton:active {
+				background-position: 0 -207px;
+				}
+				
+				.bigbutton:active span {
+					background-position: 100% -207px;
+					}
+
+/*	Stats page */
+	
+	.stats-greenbox {
+		background: #fff;
+		border: 1px solid #ccc;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		overflow: hidden;
+		padding: 20px;
+		/* Rounded corners in most browsers! */
+		-moz-border-radius: 3px; /* For Mozilla Firefox */
+		-khtml-border-radius: 3px; /* For Konqueror */
+		-webkit-border-radius: 3px; /* For Safari */
+		border-radius: 3px; /* For future native implementations */
+		}
+		
+		.stats-greenbox .stats-greenbox-inner {
+			margin: -20px 0 25px;
+			}
+
+/*	Ping page */
+	
+	.statusbar {
+		background: #b5ffad;
+		padding: 8px;
+		/* Rounded corners in most browsers! */
+		-moz-border-radius: 3px; /* For Mozilla Firefox */
+		-khtml-border-radius: 3px; /* For Konqueror */
+		-webkit-border-radius: 3px; /* For Safari */
+		border-radius: 3px; /* For future native implementations */
+		}
+	
+	.resultstable {
+		background: #ddd;
+		color: #333;
+		width: 100%;
+		/* Rounded corners in most browsers! */
+		-moz-border-radius: 3px; /* For Mozilla Firefox */
+		-khtml-border-radius: 3px; /* For Konqueror */
+		-webkit-border-radius: 3px; /* For Safari */
+		border-radius: 3px; /* For future native implementations */
+		}
+			
+		.resultstable td {
+			border-bottom: 1px solid #eee;
+			padding: 8px;
+			}
+		
+		.resultstable .result {
+			font-weight: bold;
+			}
+
+/* ooo	automattic-joint */
+		
+		.automattic-joint {
+			float: right;
+			letter-spacing: .1em;
+			text-transform: uppercase;
+			color: #888888 !important;
+			}
+
+/*	Crossbrowser fixes */
+	
+	/* IE7 */
+	
+	form {
+		margin: 0;
+		}
