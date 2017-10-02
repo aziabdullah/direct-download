@@ -1,0 +1,1 @@
+<br><textarea rows="12" style="width:100%;" readonly onClick="this.focus(); this.select();"></textarea>
