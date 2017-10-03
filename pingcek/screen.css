@@ -1,0 +1,174 @@
+/*
+ * BlogPing
+ * by Keith Gaughan <hereticmessiah@users.sourceforge.net>
+ *
+ * Look-and-feel for site when rendered on-screen.
+ *
+ * Copyright (c) Keith Gaughan, 2006. All Rights Reserved.
+ * See 'LICENSE' file for license details.
+ */
+
+address {
+	font-size:			75%;
+}
+
+body {
+	font:				0.8em Verdana, Times, "Times New Roman", sans-serif;
+	line-height:		1.6;
+	background-color : #eeeeee;
+}
+
+h1, input {
+	font-family:		Verdana, Helvetica, Arial, sans-serif;
+}
+
+
+h1 {
+	margin:				0;
+	font-size:			180%;
+}
+
+img {
+	vertical-align:		middle;
+}
+
+input#name, input#url, input#submit {
+	font-size : 20px;
+}
+
+input#name, input#url {
+	width: 400px;
+	height : 20px;
+	font-size : 15px;
+}
+
+input#name, input#feed {
+	width: 400px;
+	height : 20px;
+	font-size : 15px;
+}
+
+
+input#submit {
+	
+	font-weight:	bold;
+	font-size : 12px;
+	
+}
+
+#wrapper {
+	
+	
+	top:				1ex;
+	left:				47em;
+	bottom:				1ex;
+	
+}
+#ads {
+	top:				1ex;
+	margin-left:				290px;
+	bottom:				1ex;
+}
+p, address, h1 {
+	margin:				0.5ex 6px 1ex 6px;
+}
+
+address {
+	margin-top:			2em;
+}
+
+
+
+table.checkboxes td {
+	padding-right:		1ex;
+}
+
+table#ping-results {
+	background-color:	white;
+	width:				100%;
+	color:				gray;
+}
+
+table#ping-results tr {
+	border-top:			1px solid silver;
+	border-bottom:		1px solid silver;
+}
+
+table#ping-results th {
+	white-space:		nowrap;
+	padding:			0 0.5em;
+}
+
+.failure, .success {
+	background:			center left no-repeat;
+	padding:			0 0.5em 0 25px;
+	width:				100%;
+	min-height:			25px;
+}
+
+.failure {
+	background-image:	url(images/sad.png);
+	color:				red;
+}
+
+.success {
+	background-image:	url(images/smile.png);
+	color:				#080;
+}
+
+.completed {
+	text-align:			center;
+	font-size:			200%;
+}
+
+.pingLinks{
+font-size: 12px;
+color: #0578c9;
+}
+a.pingLinks:links{
+font-size: 12px;
+color: #0578c9;
+}
+a.pingLinks:active{
+font-size: 12px;
+color: #0578c9;
+}
+a.pingLinks:hover{
+font-size: 12px;
+color: #0578c9;
+}
+a.pingLinks:visited{
+font-size: 12px;
+color: #0578c9;
+}
+
+.headLinks{
+font-size: 12px;
+color: #ffffff;
+text-decoration : none;
+font-weight :bold;
+}
+a.headLinks:links{
+font-size: 12px;
+color: #ffffff;
+font-weight :bold;
+text-decoration : none;
+}
+a.headLinks:active{
+font-size: 12px;
+color: #ffffff;
+font-weight :bold;
+text-decoration : none;
+}
+a.headLinks:hover{
+font-size: 12px;
+color: #ffffff;
+font-weight :bold;
+text-decoration : none;
+}
+a.headLinks:visited{
+font-size: 12px;
+color: #ffffff;
+font-weight :bold;
+text-decoration : none;
+}
