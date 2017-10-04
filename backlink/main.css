@@ -1,0 +1,650 @@
+html,body{height:100%;}body{background:url("../img/backlinkr-background.jpg") repeat;}.floating-container{background:#fcfcfc;border:1px solid #b3b3b3;-webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px;-webkit-box-shadow:0px 0px 10px 0px rgba(167,167,167,0.6);-moz-box-shadow:0px 0px 10px 0px rgba(167,167,167,0.6);box-shadow:0px 0px 10px 0px rgba(167,167,167,0.6);filter:progid: DXImageTransform.Microsoft.Shadow(color='#00FF00',Direction=90,Strength=3);margin:0 auto;margin-bottom:3%;width:auto;padding:20px 15px 10px 15px;overflow:hidden;}.btn-large{border-radius:0px;margin:0;}jQuery(function() {
+    jQuery.support.placeholder false;
+    test document.createElement('input');
+    if('placeholder' in test) jQuery.support.placeholder true;
+}
+);
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #bdbdbd;
+    margin: 1em 0;
+    padding: 0;
+}
+.input-murl {
+    height: 34px !important;
+    margin-bottom: 0 !important;
+    min-width: 200px;
+    float: left;
+}
+/* Hide whatever the hell I did here... gonna do as much of it as possible in boostrap.css */
+/*
+hr {
+	font-weight: bold;
+	font-size: 60px;
+	line-height:58px;
+}
+
+h1.index {
+	font-weight: bold;
+	font-size: 30px;
+	line-height:30px;
+	}
+
+h2.index {
+	font-weight: bold;
+	font-size: 23px;
+	line-height:23px;
+}
+
+h2.small {
+	font-weight: bold;
+	font-size: 22px;
+	text-align:center;
+	line-height:110%;
+}
+
+h3.meta {
+	font-size:23px;
+	margin-bottom:-5px;
+}
+END OF HIDE*/
+
+h3.help {
+    font-size: 20px;
+    line-height: 17px;
+    margin-top: 25px;
+    margin-bottom: 3px;
+}
+h2.help {
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: none;
+    border-bottom: 2px dashed rgba(99,99,99,1.00);
+    border-top: 6px solid black;
+	word-wrap: break-word;
+    display: inline-block;
+	padding: 2px 0 5px 0;
+	line-height: 95%;
+	width:100%;
+}
+
+@media (max-width: 500px) {
+	h2.help{text-align:center!important}}
+
+h2.small {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    line-height: 90%;
+}
+.smalldescription {
+    font-size: 14px;
+    text-align: center;
+    margin: 6px 0 6px 0;
+}
+.description {
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17px;
+    max-width: 1000px;
+}
+.predescription {
+    font-size: x-small;
+    font-style: italic;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    #text {
+        min-width: 200px;
+        min-height: 50px;
+    }
+    #url {
+        height: 34px !important;
+        margin-bottom: 0 !important;
+        min-width: 300px;
+        float: left;
+    }
+}
+@media (max-width: 767px) {
+    #text {
+        min-width: 200px;
+        min-height: 50px;
+    }
+    #url {
+        height: 34px !important;
+        margin-bottom: 5px !important;
+        min-width: 200px;
+    }
+    .btn {
+        margin-bottom: 5px !important;
+    }
+}
+@media (min-width: 979px) {
+    #text {
+        min-width: 600px;
+        min-height: 200px;
+    }
+    #url {
+        height: 34px !important;
+        margin-bottom: 0 !important;
+        min-width: 400px;
+        float: left;
+    }
+    body {
+        padding-top: 80px;
+    }
+}
+/* Span12 shows results after processing backlinks*/
+.span12 {
+	font-size:small;
+}
+
+.red {
+    color: #006DCC;
+    font-weight: bold;
+}
+.warningred {
+    color: #e60008;
+    font-weight: bold;
+}
+.link-title {
+    height: 70px;
+    background-image: url(/img/tiny_gray_bg.png);
+    background-position: left top;
+    background-repeat: repeat;
+    border-bottom: 1px solid #CDCDCD;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 20px;
+    line-height: 64px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    padding: 1px 10px 0 0;
+    color: #40403F;
+}
+.link-option {
+    background: white;
+    width: 240px;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid rgba(87, 87, 87, 0.36);
+    -moz-box-shadow: 0px 0px 0px 4px rgba(87, 87, 87, 0.25);
+    -webkit-box-shadow: 0px 0px 0px 4px rgba(87, 87, 87, 0.25);
+    box-shadow: 0px 0px 0px 4px rgba(87, 87, 87, 0.25);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 10px 10px 0 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.link-option.selected {
+    border: 1px solid #006DCC;
+    -moz-box-shadow: 0px 0px 0px 4px #006DCC;
+    -webkit-box-shadow: 0px 0px 0px 4px #006DCC;
+    box-shadow: 0px 0px 0px 4px #006DCC;
+}
+.link-option ul {
+    list-style: none;
+    text-align: left;
+    padding-top: 14px;
+}
+.link-option li {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #585857;
+    padding: 0 0 0 14px;
+    vertical-align: middle;
+    height: 35px;
+}
+input[type="radio"][name="type"] {
+    display: none;
+}
+.definition {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+.counterbox {
+    width: 100%;
+    margin: 0;
+    height: auto
+}
+.counterbox li {
+    display: inline-block;
+    width: auto;
+    margin: 20px 5%;
+    height: auto;
+    vertical-align: top;
+    text-align: center;
+    font-size: 22px;
+    color: #777
+}
+.counterbox li span.main {
+    font-size: 50px;
+    color: #70b60b
+}
+.counterbox li span.sub {
+    font-size: 30px;
+    color: #70b60b
+}
+
+li.main-results{
+ width: 30%;
+ min-width:100px;
+ list-style: none;	
+}
+li font.small{
+	font-size:small;
+	display:block;
+	line-height:100%;
+}
+li.sub-results {
+	font-size: 16px;
+	
+}
+/* ========== START Meta Tag Extractor ========== */
+
+.google-content {
+    background: #fff;
+    max-width: 70%;
+    padding: 20px;
+    margin: 0px auto 0px auto;
+}
+@media (max-width: 700px) {
+    .google-content {
+        max-width: 98%;
+        padding: 10px;
+    }
+}
+.google-container {
+    background-color: #fff;
+    display: block;
+    max-width: 512px;
+    padding: 10px;
+    height: 100%;
+    margin-left: 5%;
+}
+@media (max-width: 700px) {
+    .google-container {
+        margin-left: 0;
+    }
+}
+a.google-title:hover {
+    text-decoration: underline;
+    color: rgb(26, 13, 171);
+}
+.google-title {
+    font-family: arial, sans-serif;
+    word-wrap: break-word;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* max-width: 512px; */
+    
+    -webkit-box-orient: vertical;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: normal;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.0980392);
+    color: rgb(26, 13, 171);
+    -webkit-line-clamp: 1;
+    cursor: pointer;
+}
+@media (max-width: 700px) {
+    .google-title {
+        -webkit-line-clamp: 2;
+        font-family: Roboto-Regular, HelveticaNeue, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+.google-url {
+    font-family: arial, sans-serif;
+    color: rgb(0, 102, 33);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media (max-width: 700px) {
+    .google-url {
+        font-size: 14px;
+        font-family: Roboto-Regular, HelveticaNeue, Arial, sans-serif;
+        line-height: 20px;
+    }
+}
+.google-description {
+    font-family: arial, sans-serif;
+    line-height: 18px;
+    word-wrap: break-word;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: rgb(34, 34, 34);
+    height: auto;
+    text-align: left;
+}
+@media (max-width: 700px) {
+    .google-description {
+        -webkit-line-clamp: 3;
+        font-family: Roboto-Regular, HelveticaNeue, Arial, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 20px;
+    }
+}
+.safe,
+.over {
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+}
+.safe {
+    background: green;
+}
+.over {
+    background: red;
+}
+/* View All Meta Tags */
+
+.slidingDiv {
+    display: none;
+    width: auto;
+}
+/* ========== END Meta Tag Extractor ==========  */
+
+@media (max-width: 767px) {
+    footer {
+        margin: 0px -20px 0px -20px;
+    }
+}
+footer {
+    bottom: 0;
+    color: #999;
+    text-align: center;
+    background-color: #151515;
+    padding: 15px 0px 15px 0px;
+}
+.alert-share {
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    display: none
+}
+/* ========== START Adblock ==========  */
+
+@media screen and (max-width: 780px) {
+    #adblocker {
+        display: none;
+    }
+}
+#adblocker {
+    margin-right: auto;
+    margin-left: auto;
+    width: 728px;
+    display: block;
+}
+.blockerimage {
+	display:inline-block;
+	margin:5px 0 5px 0;
+}
+/* ========== END Adblock ==========  */
+/* ========== START AddThis Modifications ==========  */
+
+#at-cv-lightbox-submit {
+    margin-bottom: 10px;
+}
+#at-cv-lightbox-message {
+    line-height: 120%;
+}
+.at-goal-container {
+    margin-top: 10px;
+}
+/* Hides AddThis Branding */
+
+.at-branding-logo {
+    display: none;
+    visibility: hidden;
+}
+.addthis_bar_logo {
+    display: none;
+    visibility: hidden;
+}
+/*Makes subscription bar appear underneath navbar (instead of overtop) */
+
+.addthis_bar.addthis_bar_fixed {
+    margin-top: 44px;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+.addthis_bar {
+    margin-bottom: 25px;
+}
+/* Make follow buttons background the same color as navbar/style text slightly */
+
+div.at4-follow-inner {
+    background: none !important;
+    border: none;
+}
+.at-follow-label {
+    font-weight: bold;
+    font-size: x-small
+}
+/* Make mobile share/follow bar appear behind sticky Google Ad */
+
+#at4m-mobile-container {
+    z-index: 0 !important;
+}
+/* ========== END AddThis Modifications ==========  */
+/* ========== START Responsive Google Ad ==========  */
+
+.backlinkr-responsive-unit {
+    width: 320px;
+    height: 50px;
+}
+@media(min-width: 500px) {
+    .backlinkr-responsive-unit {
+        width: 468px;
+        height: 60px;
+    }
+}
+@media(min-width: 800px) {
+    .backlinkr-responsive-unit {
+        width: 728px;
+        height: 90px;
+    }
+}
+/* ========== END Responsive Google Ad ==========  */
+
+/* ========== START Custom Adblock Ads ==========  */
+
+a.fiverr1:hover, a.fiverr2:hover, a.fiverr1:active, a.fiverr2:active, a.fiverr1:focus, a.fiverr2:focus{
+	color:#02ce37;
+	text-decoration:none;
+}
+a.fiverr3:hover, a.fiverr3:active, a.fiverr3:focus {
+	color:#000;
+	text-decoration:none;
+}
+.fiverr1{
+	background-color:#455560;
+	font-size:11px;
+	color:white;
+	text-align:center;
+	line-height: 120%;
+	padding-bottom:2px;
+	margin-bottom:5px;
+}
+.fiverr2{
+	background-color:#2b455e;
+	font-size:11px;
+	color:white;
+	text-align:center;
+	line-height: 120%;
+	padding-bottom:2px;
+	margin-bottom:5px;
+}
+.fiverr3{
+	background-color:#00b31a;
+	font-size:11px;
+	color:white;
+	text-align:center;
+	line-height: 120%;
+	padding-bottom:2px;
+	margin-bottom:5px;
+}
+/* Not in use atm */
+.center-banners {
+	margin:auto;
+	width:728px;
+}
+
+/* ========== END Custom Adblock Ads ==========  */
+
+/* Not in use atm */
+.center-child {
+	  display: inline-block;
+}
+/* Not in use atm */
+.center-parent {
+	  text-align: center;
+}
+
+
+
+/* ========== START of Custom Fonts ==========  */
+/* Taken from https://fonts.googleapis.com/css?family=Open+Sans:400,600&lang=en */
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/K88pR3goAWT7BTt32Z01mxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/RjgO7rYTmqiVp7vzi-Q5URJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/LWCjsQkB6EMdfHrEVqA1KRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/xozscpT2726on7jbcb_pAhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/59ZRklaO5bWGqF5A9baEERJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSq-j2U0lmluP9RWlSytm3ho.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSpX5f-9o1vgP2EXwfjgl7AY.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShWV49_lSm1NYrwo-zkhivY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSqaRobkAwv3vxw3jMhVENGA.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSv8zf_FOSsgRmwsS7Aa9k2w.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSj0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
