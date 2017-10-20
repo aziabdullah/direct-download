@@ -1,0 +1,343 @@
+body 	{
+	background-color:#000000;
+	background-image:url("picts-mobi/main-background.jpg");
+	background-position: 0px 50px;
+	background-repeat:no-repeat;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	}
+
+
+
+
+/* NON-MENU LINKS */
+
+a:link, a:visited, a:active	{ color: #3399FF; text-decoration: underline; }
+
+a:hover				{ color: #33CCFF; text-decoration: underline; }
+
+
+
+
+/* THIS LINE CONTROLS THE FONT SIZE ON ALL PAGES */
+
+body		{ color: #9B9FB1; font: 0.90em arial, helvetica, sans-serif; font-weight: normal; line-height: 1.3em; }
+
+.title		{ color: #FFFFFF; font: bold 1.5em arial, sans-serif; }
+
+.subtitle	{ color: #FFFFFF; font: bold 1.0em arial, sans-serif; }
+
+.hilite		{ color: #CCFF66; }
+
+.bottomlinks	{ color: #CC0000; }
+
+
+
+
+/* PAGE WIDTHS HEIGHTS */
+
+.pageheight	{ min-height: 680px; }
+
+.pagewidth	{ width: 100%; }
+
+.pagediv	{
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+		}
+
+#splitdiv	{
+		margin: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		text-align: center;
+		padding: 0px;
+		}
+
+#contentdiv	{
+		max-width: 1060px;
+		text-align: left;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		}
+
+
+
+
+/* ALIGNMENT */
+
+table, tr, td	{ border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; border: 0; }
+
+.td-right 	{ text-align: right; }
+
+.td-left 	{ text-align: left; }
+
+.td-center	{ text-align: center; }
+
+.td-middle	{ vertical-align: middle; }
+
+.td-top		{ vertical-align: top; }
+
+.center-div	{ margin-left: auto; margin-right: auto; }
+
+.right-div	{ margin-left: auto; margin-right: 0; }
+
+.left-div	{ margin-left: 0; margin-right: auto; }
+
+.floatclear 	{ height: 0px; clear: both; font-size: 1px; line-height: 0px; padding: 0px; margin: 0px; }
+
+
+
+
+/* HEADER */
+
+.header		{
+		background-color: #000000;
+		width: 100%;
+		padding: 0px;
+		margin: 0px 0px 0px 0px;
+		border-top: #FF0000 0px solid;
+		border-bottom: #FF0000 0px solid;
+		}
+
+/* RESPONSIVE LOGO IMAGE - SEE MEDIA QUERIES AT BOTTOM */
+
+.logoimage	{ width: 150px; height: 84px; display: block; margin: 10px 0px 10px 0px; }
+
+.socialicons	{ padding: 0px 2px 0px 1px; }
+
+.socialtable 	{ margin: 0px 6px 0px auto; }
+
+
+
+
+/* FOOTER */
+
+.footerdiv	{
+		color: #858899;
+		font: 0.75em arial, sans-serif;
+		text-align: center;
+		padding: 0px 0px 8px 0px;
+		border: #999999 0px solid;
+		border-width: 0px 0px 0px 0px;
+		}
+
+.footericon	{ margin: 0px 0px 6px 0px; }
+
+
+
+
+/* BORDERS AND BARS */
+
+.page-splits	{
+		font-size: 0.1em;
+		line-height: 1px;
+		border: #444444 1px solid;
+		height: 3px;
+		margin: 3px 0px 3px 0px;
+		}
+
+
+
+
+/* IMAGES */
+
+img 		{ border: 0; }
+
+.img-borders	{ border: #897FA8 1px solid; margin-right: 4px; margin-bottom: 4px; }
+
+.iborders	{ border: #666666 1px solid; padding: 0px; margin: 3px; }
+
+.imagetext	{ color: #C0C0C0; font: 0.7em arial, sans-serif; }
+
+.imagefloat	{ float:left; margin-right: 8px; margin-bottom: 3px; }
+
+
+
+
+/* GALLERY AND GALLERY VIEWER */
+
+#gallery-return {
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		z-index: 100;
+		background-color: #000000;
+  	/* CORNER ROUNDING */
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-khtml-border-radius: 4px;
+		border-radius: 4px;
+		}
+
+.Galborder	 	{ border: #60657C 1px solid; margin: 2px; }
+
+a:hover .Galborder 	{ border: #FF0000 2px solid; margin: 1px; }
+
+.viewer-border		{ border: #60657C 2px solid; }
+
+#viewer-content		{
+			border: #60657C 1px solid;
+			width: 94%;
+			max-width: 1000px;
+			position: relative;
+			margin-top: 15px;
+			}
+
+.viewer-image		{ width: 100%; height: auto; display: block; }
+
+
+
+
+/* LIST CODE */
+
+ul.list 		{ margin-top: 0px; margin-bottom: 0px; }
+ul.list li 		{ color: #6666CC; }
+ul.list li span 	{ color: #FFFFFF; }
+
+
+
+
+/* PAYPAL */
+
+#paypal-div		{
+			background-color: #417F2D;
+			color: #FFFFFF;
+			width: 150px;
+			font-size: 0.9em;
+			text-align: center;
+			border: #8CD17B 1px solid;
+			}
+
+.paypal-form		{
+			background-color: #000000;
+			color: #FFFFFF;
+			width: 110px;
+			font-size: 0.9em;
+			margin: 2px 0px 2px 0px;
+			border: #8CD17B 1px solid;
+			}
+
+.paypal-submit		{
+			background-color: #1A4D09;
+			color: #FFFFFF;
+			font-size: 0.9em;
+			width: 110px;
+			cursor: pointer;
+			padding: 5px 0px 5px 0px;
+			margin: 6px 0px 5px 0px;
+			border: #8CD17B 1px solid;
+			}
+
+
+
+
+/* MENU CODE */
+
+.menutable		{ background-color: transparent; }
+
+#menudiv		{
+			padding: 0px 2px 0px 2px;
+			margin: 0px 0px 8px 0px;
+			background-color: transparent;
+			border-top: #FF0000 1px solid;
+			border-bottom: #FF0000 1px solid;
+			}
+
+#menunav, #menunav ul 	{
+			width: 100%;
+			list-style: none;
+			padding: 0px;
+			margin: 0px;
+			}
+
+/* MENU PADDING, FONT FACE & COLOR */
+
+#menunav a 		{
+			color: #C0C0C0;
+			font: 12px arial, sans-serif;
+			font-weight: bold;
+			text-decoration: none;
+			text-align: center;
+			padding: 10px 5px 10px 5px;
+			width: 75px;
+			display: block;
+			cursor: pointer;
+			}
+
+/* MENU BACKROUND, BORDER & MARGINS - IMAGE BELOW ADDS GRADIENT */
+
+#menunav li 		{
+			background-color: #000000;
+			background-image:url("picts-mobi/menu.jpg");
+			background-repeat:repeat-x;
+			display: inline-block;
+    			*display:inline;/* For IE*/
+    			*zoom:1;
+			padding: 0px;
+			border-left: #000000 0px solid;
+			border-right: #000000 0px solid;
+			}
+
+/* MENU HOVER FONT COLOR */
+
+#menunav li a:hover 
+			{
+			color: #FFFFFF;
+			text-decoration: none;
+			cursor: pointer;
+			}
+
+/* MENU HOVER BACKGROUND AND BORDER */
+
+#menunav li:hover 
+			{
+			background-color: #000000;
+			background-image: none;
+			border-left: #000000 0px solid;
+			border-right: #000000 0px solid;
+			}
+
+/* CURRENT PAGE MENU HIGHLIGHT BACKGROUND */
+
+#menunav li.current 	{
+			background-color: #CC0000;
+			background-image: none;
+			border-left: #CC0000 0px solid;
+			border-right: #CC0000 0px solid;
+			}
+
+
+
+
+/***************
+START Media Queries - RESPONSIVE FOR SMALLER MOBILE SCREENS
+                      CLASSES HERE CAN ALSO BE FOUND IN THE style.css
+***************/
+@media handheld and (max-width: 482px),
+   screen and (max-device-width: 482px),
+   screen and (max-width: 482px) 
+	{
+
+
+.title		{ font-size: 1.1em; }
+
+.logoimage	{ width: 132px; height: auto; margin: 10px 0px 10px 0px; }
+
+.home-images	{ width: 50px; height: auto; }
+
+.hidemobile	{ display: none; }   /* UNUSED AT THIS TIME */
+
+
+
+
+	}
+/***************
+END Media Queries
+***************/
